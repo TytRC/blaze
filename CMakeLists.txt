@@ -83,6 +83,7 @@ add_subdirectory(libllvm)
 add_subdirectory(libgalois)
 add_subdirectory(src)
 add_subdirectory(apps)
+add_subdirectory(test)
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     add_definitions(-DLINUX)

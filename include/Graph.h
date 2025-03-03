@@ -11,6 +11,7 @@
 #include "galois/Galois.h"
 #include "Bitmap.h"
 #include "Util.h"
+#include "Type.h"
 
 namespace blaze {
 

@@ -101,7 +101,7 @@ int main(int argc, char **argv) {
 
     Worklist<VID>* frontier = new Worklist<VID>(n);
     frontier->activate(startNode);
-
+    printf("[RECORD] start_time: %ld\n", runtime.getElapsedTime().count());
     galois::StatTimer time("Time", "BFS_MAIN");
     time.start();
 

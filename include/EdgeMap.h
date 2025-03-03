@@ -167,7 +167,7 @@ class EdgeMapExecutor {
         sprintf(buf, "# EDGEMAP %4d : %12lu nodes %9s, %12lu edges, %12lu bytes, %8.5f sec, %8.5f sec",
                 round, _num_activated_nodes, frontier_type_name.c_str(), _num_activated_edges, io_bytes, _compute_time, _io_time);
         info.append(buf);
-
+        std::cout << "[RECORD] round_" << round << "_time: " << _runtime.getElapsedTime().count() << "\n";
         std::cout << info;
 
         if (_pb_engine) {
